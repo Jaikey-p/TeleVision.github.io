@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/@tonconnect/ui@1.0.0-beta.5/dist/tonconnect-ui.min.js"></script>
+</head>
+<body>
+    
+    <div class="game">
+        <h1 class="price" id="price">100 <img src="C:\Users\Jk\Desktop\Tonconnect\video-course\4_ton-connect-ui\usdt.jpg"style="width: 30px;height: 30px;margin: right 14px; ;"  alt="coin">= 1$  </h1>
+        <div class="header">
+           
+            <img src="C:\Users\Jk\Desktop\Tonconnect\video-course\4_ton-connect-ui\usdt.jpg" alt="coin" />
+            <h2 class="score" id="score">0</h2>
+          
+        </div>
+        <div class="circle">
+            <a href="https://1wapa.com/"> <img id="circle" src="C:\Users\Jk\Desktop\Tonconnect\video-course\4_ton-connect-ui\2.png" alt="frog" /></a>
+       
+      
+  
+        </div>
+      
+  
+        <script src="app.js" defer></script>
+        <div class="buttonRootId">
+            <div id="connect-button-root"style="position: absolute;top:2%;right:2%;color: #000;"></div>
+        </div>
+        
+        
+    </div>
+
+    <script>
+        const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+            manifestUrl: 'https://ton-connect.github.io/demo-dapp-with-react-ui/tonconnect-manifest.json',
+            buttonRootId: 'connect-button-root'
+        });
+
+
+        tonConnectUI.onStatusChange(console.log);
+    </script>
+
+</body>
+</html>
